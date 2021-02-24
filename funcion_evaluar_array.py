@@ -7,6 +7,7 @@ array2=[2, 3, 4, 5]
 def eval_duplicados(array):
 
     boleans=pd.Index(array).duplicated(keep=False)
+    '''boleans = [ True  True  True  True False  True  True  True False]'''
     tamaño=len(array)
     if True in boleans:
         for index in range(0,tamaño):
